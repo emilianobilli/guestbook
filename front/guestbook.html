@@ -1,0 +1,86 @@
+<html>
+	<head>
+		<link href="css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+		<script src="js/blockies.min.js"></script>
+		<script src="js/message.js"></script>
+		<style>
+		.thumbnail {
+			padding:0px;
+		}
+		.panel {
+			position:relative;
+		}
+		.panel>.panel-heading:after,.panel>.panel-heading:before{
+			position:absolute;
+			top:11px;left:-16px;
+			right:100%;
+			width:0;
+			height:0;
+			display:block;
+			content:" ";
+			border-color:transparent;
+			border-style:solid solid outset;
+			pointer-events:none;
+		}
+		.panel>.panel-heading:after{
+			border-width:7px;
+			border-right-color:#f7f7f7;
+			margin-top:1px;
+			margin-left:2px;
+		}
+		.panel>.panel-heading:before{
+			border-right-color:#ddd;
+			border-width:8px;
+		}
+		#m {
+			margin-top: 60px;
+		}
+		</style>
+	</head>
+	<body>	
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-sm-2">
+				</div>
+				<div class="col-sm-4">
+					<img src="https://explorer.rsk.co/img/explorer-logo.png" style="max-width: 150px;"></img>
+				</div>
+				<div class="col-sm-6">
+					<h1>Cexar.io: GuestBook</h1>
+				</div>
+			</div>
+		</div>
+		<div id="m" class="row">
+		</div>
+		
+		<div class="row">
+			<div class="col-sm-12">
+				<div class="col-sm-1"></div>
+			<div id="message_board" class="col-sm-5">
+
+			
+			
+			</div>
+			<div class="col-sm-6">
+					<h2 id="ContractMessage"></h2>
+					<form>
+					<div class="form-group">
+					  <label for="name">Name:</label>
+					  <input type="text" class="form-control" id="name" name="name">
+					</div>
+					<div class="form-group">
+					  <label for="message">Message:</label>
+					  <input type="message" class="form-control" id="message" name="message">
+					</div>
+					<div class="form-group">
+					  <label for="value">Value in Wei (min 1):</label>
+					  <input type="number" class="form-control" id="value" name="value" value="1">
+					</div>
+					<button id="send" type="submit" class="btn btn-default">Submit</button>
+					</form>
+			</div>
+			</div>
+		</div>
+	
+	</body>
+</html>

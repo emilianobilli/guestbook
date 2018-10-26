@@ -38,7 +38,7 @@ window.addEventListener('load', function() {
 		w = new Web3(web3.currentProvider);
 	} else {
 		console.log("No hay MetaMask");
-		window.alert("Please install Metamask and config it with RSK Mainnet. http://rsk.cexar.io:4444");
+		window.alert("Please install Metamask and configure it pointing to RSK Mainnet. http://rsk.cexar.io:4444");
 		throw "MetaMakask";
 	}
 	Contract = w.eth.contract(ContractAbi);
